@@ -6,7 +6,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-.home, .report, .product{
+.home, .allitems, .clothing{
   display: flex;
   height: 90vh;
   align-items: center;

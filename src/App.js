@@ -1,9 +1,9 @@
 import './App.css';
 import {BrowserRouter as Router , Route, Switch,  } from 'react-router-dom';
-import Navbar from './component/Navbar';
+import Navbar from './component/Nav/Navbar';
 import Home from './pages/Home';
-import Report from './pages/Report';
-import Product from './pages/Product'
+import Items from './pages/Items';
+import clothing from './pages/Clothing'
 function App() {
   return (
     <>
@@ -11,8 +11,8 @@ function App() {
       <Navbar/>
         <Switch>
           <Route path='/' exact component={Home}/>
-          <Route path='/reports' component={Report}/>
-          <Route path='/products' component={Product}/>
+          <Route path='/allitems' component={Items}/>
+          <Route path='/clothing' component={clothing}/>
         </Switch>
     </Router>
     </>
